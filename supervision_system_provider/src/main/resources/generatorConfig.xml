@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+	<classPathEntry location="D:\applications\apache-maven-3.6.0\repository\mysql\mysql-connector-java\5.1.35\mysql-connector-java-5.1.35.jar"/>
+	<context id="context1" >
+	  <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://61.164.242.135:3306/fljg?serverTimezone=GMT%2B8&amp;useUnicode=true&amp;characterEncoding=UTF-8" userId="fljg" password="ilovelaohan" />
+	  <javaModelGenerator targetPackage="cn.gov.jseport.entity" targetProject="supervision_system_provider" ></javaModelGenerator>
+	  <sqlMapGenerator targetPackage="cn.gov.jseport.mapper" targetProject="supervision_system_provider" ></sqlMapGenerator>
+	  <javaClientGenerator targetPackage="cn.gov.jseport.mapper" targetProject="supervision_system_provider" type="XMLMAPPER" />
+	  <table schema="" tableName="userinfo" ></table>
+	</context>
+</generatorConfiguration>
