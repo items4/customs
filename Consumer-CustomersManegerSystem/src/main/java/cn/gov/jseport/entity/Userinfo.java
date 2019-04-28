@@ -1,6 +1,17 @@
 package cn.gov.jseport.entity;
 
+import java.util.List;
+
 public class Userinfo {
+	private List trees;
+
+	public List getTrees() {
+		return trees;
+	}
+
+	public void setTrees(List trees) {
+		this.trees = trees;
+	}
 
 	private Integer uid;
 

@@ -9,6 +9,11 @@ spring:
     password: ilovelaohan
   main:
     allow-bean-definition-overriding: true
+    
+  mvc:
+    view:
+      suffix: .jsp
+      prefix: /
 eureka:
   client:
     register-with-eureka: true

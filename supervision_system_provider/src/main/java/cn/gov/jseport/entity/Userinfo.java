@@ -1,5 +1,7 @@
 package cn.gov.jseport.entity;
 
+import java.util.List;
+
 public class Userinfo {
 
 	private Integer uid;
@@ -9,6 +11,21 @@ public class Userinfo {
 	private String upass;
 
 	private Boolean islock;
+	
+	private List trees;
+	
+	public List getTrees() {
+		return trees;
+	}
+
+	public void setTrees(List trees) {
+		this.trees = trees;
+	}
+
+	@Override
+	public String toString() {
+		return "Userinfo [uid=" + uid + ", uname=" + uname + ", upass=" + upass + ", islock=" + islock + "]";
+	}
 
 	public Integer getUid() {
 		return uid;

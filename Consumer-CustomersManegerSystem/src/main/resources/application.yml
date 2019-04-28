@@ -2,11 +2,16 @@ server:
   port: 7001
   
 user: 
-  serverUrl: http://provider/
+  serverUrl: provider
   
 spring:
   application:
     name: consumer
+    
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
     
 eureka:
   client:

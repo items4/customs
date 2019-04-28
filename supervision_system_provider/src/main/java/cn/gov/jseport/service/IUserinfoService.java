@@ -6,4 +6,5 @@ import cn.gov.jseport.entity.Userinfo;
 
 public interface IUserinfoService {
 	List<Userinfo> findAll();
+	Userinfo login(Userinfo info);
 }

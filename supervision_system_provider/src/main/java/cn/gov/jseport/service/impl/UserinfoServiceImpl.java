@@ -17,5 +17,11 @@ public class UserinfoServiceImpl implements IUserinfoService {
 	public List<Userinfo> findAll() {
 		return userinfoMapper.selectByExample(null);
 	}
+	@Override
+	public Userinfo login(Userinfo info) {
+		// TODO Auto-generated method stub
+		return userinfoMapper.login(info);
+	}
+	
 
 }
