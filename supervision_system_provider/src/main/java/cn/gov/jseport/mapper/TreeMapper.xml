@@ -14,9 +14,9 @@
     <result column="icon" property="icon" jdbcType="VARCHAR" />
   </resultMap>
   <select id="findByTreeId" resultMap="BaseResultMap" parameterType="int">
-		  SELECT *FROM tree WHERE tid IN(
+		  SELECT * FROM tree WHERE tid IN(
 		SELECT tid FROM roletree WHERE rid IN (
-		SELECT rid FROM userinforole WHERE uid=1
+		SELECT rid FROM userinforole WHERE uid=#{uid}
 		)
 		)
   </select>

@@ -9,6 +9,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import com.alibaba.druid.pool.DruidDataSource;
 
+import cn.gov.jseport.controller.UserinfoController;
 import cn.gov.jseport.entity.Userinfo;
 import cn.gov.jseport.mapper.UserinfoMapper;
 
@@ -16,11 +17,13 @@ import cn.gov.jseport.mapper.UserinfoMapper;
 @SpringBootTest
 public class SupervisionSystemProviderApplicationTests {
 	@Resource
-	private UserinfoMapper userinfoMapper;
+	private UserinfoController userinfoController;
 	@Test
 	public void contextLoads() {
-		Userinfo userinfo = userinfoMapper.selectByPrimaryKey(1);
-		System.out.println(userinfo.getUname());
+		Userinfo info = new Userinfo();
+		info.setUname("admin");
+		info.setUpass("admin");
+		Userinfo login = userinfoController.login(info);
 	}
 
 }

@@ -12,6 +12,6 @@ upass<input type="text" name="upass"><br>
 <input type="submit" value="登录">
 
 </form>
-AAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAA
 </body>
 </html>

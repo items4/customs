@@ -13,7 +13,7 @@
     <result column="islock" property="islock" jdbcType="BIT" />
   </resultMap>
   <resultMap type="cn.gov.jseport.entity.Userinfo" id="BaseResultMapwithtree" >
-  <collection property="trees" column="uid" select="com.woniu.mapper.TreeMapper.findByTreeId"></collection>
+  <collection property="trees" column="uid" select="cn.gov.jseport.mapper.TreeMapper.findByTreeId"></collection>
   </resultMap>
   <select id="login" resultMap="BaseResultMapwithtree" parameterType="cn.gov.jseport.entity.Userinfo">
   	select * from userinfo where uname=#{uname} and upass=#{upass}

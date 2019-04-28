@@ -32,7 +32,7 @@ public class UserinfoController {
 	@RequestMapping("/login")
 	public ModelAndView login(Userinfo info,HttpSession session) throws Exception {
 
-	Userinfo	userinfo = iService.login(info);
+	Userinfo userinfo = iService.login(info);
 		System.out.println(info+"%%%%%%%%%%%%%%%%%%%%%%%%%%%%");
 		
 		ModelAndView mv = new ModelAndView();
